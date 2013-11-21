@@ -62,7 +62,7 @@ func main() {
 		overallProfit := profitPer * *amount
 		percentage := overallProfit / (*amount * *buyValue)
 
-		fmt.Printf("Made $%.2f %.2f%% - currently at $%f USD (spent:$%.2f, made:$%.2f)\n",
+		fmt.Printf("$%.2f - %.2f%% - currently trading at $%f USD (spent:$%.2f, made:$%.2f)\n",
 			overallProfit, percentage*100, val, *buyValue*(*amount), val*(*amount))
 	}
 }
